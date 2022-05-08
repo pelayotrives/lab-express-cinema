@@ -1,8 +1,120 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0;
 }
 
 a {
-  color: #00B7FF;
+  color: #00b7ff;
+}
+
+.button {
+  background-color: darkgray;
+  color: black;
+  text-decoration: none;
+  padding: 10px 61px;
+  border-radius: 10px;
+  transition-duration: 0.3s;
+}
+
+.button:hover {
+  background-color: rgb(110, 110, 110);
+  color: white;
+  text-decoration: none;
+  padding: 10px 61px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 6px 1px rgb(65, 65, 65);
+}
+
+.container-movies {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 50px 150px;
+}
+
+.container-details {
+  display: flex;
+  flex-direction: row;
+  margin: 50px 150px;
+}
+
+.image-details {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  padding-right: 50px;
+}
+
+.text-details {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.container-movies {
+  display:inline-flex ;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-left: 225px;
+}
+
+.text-movies {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.titles-movies {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  padding: 25px;
+}
+
+.background-movies {
+  background-image: url(../images/cinema.jpg);
+  background-repeat: none;
+  background-size: cover;
+}
+
+.background-movies h1 {
+  color: white;
+  font-size: 100px;
+}
+
+.background-movies a {
+  background-color: white;
+  color: rgb(120, 140, 140);
+  text-decoration: none;
+  padding: 20px 75px;
+  border-radius: 30px;
+  margin-top: -30px;
+}
+
+.align-index {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-between;
+  justify-content: space-between;
+  margin-top: 300px;
+}
+
+.align-index-title {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.align-index-button {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
 }

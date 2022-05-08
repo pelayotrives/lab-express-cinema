@@ -10,8 +10,8 @@ const MONGO_URI = process.env.MONGODB_URI || "mongodb://localhost/lab-express-ci
 mongoose
   .connect(MONGO_URI)
   .then((x) => {
-    console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`);
+    console.log(`¡Se ha logrado la conexión a MongoDB! ---> La BBDD actual es: "${x.connections[0].name}".`);
   })
   .catch((err) => {
-    console.error("Error connecting to mongo: ", err);
+    console.error("Error al conectar a MongoDB: ", err);
   });
